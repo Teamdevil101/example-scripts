@@ -44,7 +44,7 @@ public class AccountManager : MonoBehaviour
         if (string.IsNullOrEmpty(PlayFabSettings.TitleId))
         {
             Debug.Log("PlayFabSettings TitleId was empty. Fixing now!");
-            PlayFabSettings.TitleId = "6E16C"; // Please change this value to your own titleId from PlayFab Game Manager
+            PlayFabSettings.TitleId = ""; // Please change this value to your own titleId from PlayFab Game Manager
         }
         e_mail.text = PlayerPrefs.GetString("Username", e_mail.text);
     }
